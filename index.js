@@ -138,6 +138,7 @@ function renderTag(elem, opts) {
   if (
     opts.xmlMode
     && (!elem.children || elem.children.length === 0)
+	&& !opts.closeTags
   ) {
     tag += '/>';
   } else {
